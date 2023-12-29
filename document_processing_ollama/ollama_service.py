@@ -17,11 +17,12 @@ class OllamaService:
 
     def load_prompt(self, prompt_name):
         """Loads a prompt from a file."""
-        try:
-            with open(os.path.join("prompts", prompt_name), encoding="utf-8") as f:
-                prompt = PromptTemplate.from_template(f.read(), template_format="jinja2")
-        except FileNotFoundError:
+        prompt_path = os.path.join("prompts", prompt_name)
+        if not os.path.exists(prompt_path):
             raise FileNotFoundError(f"Prompt file '{prompt_name}' not found.")
+
+        with open(prompt_path, encoding="utf-8") as f:
+            prompt = PromptTemplate.from_template(f.read(), template_format="jinja2")
 
         return prompt
 
@@ -30,24 +31,23 @@ class OllamaService:
         result = {}
         # iterate over the text list
         for doc in tqdm(documents):
-
             # append the text to the prompt
             text_prompt = self.prompt.format(text=documents[doc])
 
             # generate the prediction
             answer = self.llm(text_prompt)
 
-            # remove all line breaks
-            answer = answer.replace("\n", "")
-
-            # remove all double backslashes
-            answer = answer.replace("\\", "")
+            # remove all line breaks and double backslashes
+            answer = answer.replace("\n", "").replace("\\", "").strip()
 
             # create a json object from the answer
-            answer = json.loads(answer)
+            try:
+                answer_dict = json.loads(answer)
+            except json.JSONDecodeError:
+                answer_dict = answer
 
             # append the answer to the result
-            result[doc] = {"title": doc, "input": documents[doc], "output": answer}
+            result[doc] = {"title": doc, "input": documents[doc], "output": answer_dict}
 
         return result
 
