@@ -1,5 +1,7 @@
 """This classes handle the loading of documents from a given path."""
+import os
 from abc import ABC, abstractmethod
+from typing import Dict
 
 from langchain.document_loaders import DirectoryLoader, PyPDFium2Loader, TextLoader
 
@@ -25,12 +27,22 @@ class AbstractDocumentExtractor(ABC):
 class PDFDocumentExtractor(AbstractDocumentExtractor):
     """Extracts documents from PDF files."""
 
-    def extract_documents(self):
+    def extract_documents(self) -> Dict[str, str]:
         """Extracts documents from PDF files."""
-        # Implement text extraction from PDF document here
-        loader = DirectoryLoader(self.path, glob="*.pdf", loader_cls=PyPDFium2Loader)
-        docs = loader.load()
-        return docs
+        try:
+            loader = DirectoryLoader(self.path, glob="*.pdf", loader_cls=PyPDFium2Loader)
+            docs = loader.load()
+        except Exception as e:
+            print(f"Failed to load documents: {e}")
+            return {}
+
+        # Use a dictionary comprehension to create the result dictionary
+        result = {os.path.basename(doc.metadata["source"]): doc.page_content for doc in docs}
+
+        # sort the dictionary by key
+        result = dict(sorted(result.items()))
+
+        return result
 
 
 class WordDocumentExtractor(AbstractDocumentExtractor):
