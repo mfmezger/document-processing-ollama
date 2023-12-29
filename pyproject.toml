@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "document-processing-ollama"
+version = "0.1.0"
+description = ""
+authors = ["Marc F. Mezger <marc.mezger@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.352"
+pypdfium2 = "^4.25.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
