@@ -50,3 +50,4 @@ class OllamaService:
 
     def extract_xml(self, text):
         """Extracts XML data from a given text."""
+        # TODO: Implement XML extraction

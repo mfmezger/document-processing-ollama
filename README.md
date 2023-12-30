@@ -3,7 +3,11 @@
 
 ## Introduction
 
-This is a repository used to demonstrate how to use LLMs for document processing.
+This is a repository used to demonstrate how to use LLMs for document processing. It is part of a course there fore the xml extraction part is left as a task for the students. The repository is build with poetry and uses the following libraries:
+- Langchain
+- Loguru
+- Jinja2
+- PyPdfium2
 
 ## Installation
 

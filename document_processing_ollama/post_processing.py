@@ -72,7 +72,9 @@ class XMLPostProcessor(AbstractPostProcessor):
     def cleaning(self):
         """Clean the data."""
         # Implement cleaning of the data here
+        # TODO: Implement XML cleaning
 
     def validation(self):
         """Validate the correct data format."""
         # Implement validation of the data here
+        # TODO: Implement XML validation

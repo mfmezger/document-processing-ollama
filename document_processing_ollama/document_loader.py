@@ -51,3 +51,4 @@ class TextDocumentExtractor(AbstractDocumentExtractor):
     def extract_documents(self):
         """Extracts documents from text files."""
         # Implement text extraction from text document here
+        # TODO: Implement text extraction from text document
