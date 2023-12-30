@@ -6,16 +6,14 @@ from langchain.prompts import PromptTemplate
 from loguru import logger
 from tqdm import tqdm
 
-model = "mistral:instruct"
-
 
 class OllamaService:
     """Base class for OllamaService."""
 
-    def __init__(self):
+    def __init__(self, model="mistral:instruct", prompt_name="json-extraction.j2"):
         """Initialization of the Connection to the Ollama API."""
         self.llm = Ollama(model=model)
-        self.prompt = self.load_prompt("json-extraction.j2")
+        self.prompt = self.load_prompt(prompt_name)
 
         logger.info(f"OllamaService initialized with model: {model}.")
 

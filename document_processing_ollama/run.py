@@ -20,8 +20,9 @@ def main():
     output_dir = "output"
     output_file = os.path.join(output_dir, "result.json")
 
-    pdf_extractor = PDFDocumentExtractor(path="input/pdf")
-    ollama_service = OllamaService()
+    pdf_extractor = PDFDocumentExtractor(path=input_dir)
+
+    ollama_service = OllamaService(model="mistral:instruct", prompt_name="json-extraction.j2")
 
     documents = pdf_extractor.extract_documents()
 
