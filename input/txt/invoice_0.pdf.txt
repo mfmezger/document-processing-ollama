@@ -1,0 +1,24 @@
+Invoice no: 40378170
+Date of issue: 10/15/2012
+Seller:
+Patel, Thompson and Montgomery
+356 Kyle Vista
+New James, MA 46228
+Tax Id: 958-74-3511
+IBAN: GB77WRBQ31965128414006
+Client:
+Jackson, Odonnell and Jackson
+267 John Track Suite 841
+Jenniferville, PA 98601
+Tax Id: 998-87-7723
+ITEMS
+No. Description Qty UM Net price Net worth VAT [%] Gross
+worth
+Leed's Wine Companion Bottle
+Corkscrew Opener Gift Box Set
+with Foil Cutter
+1. 1,00 each 7,50 7,50 10% 8,25
+SUMMARY
+VAT [%] Net worth VAT Gross worth
+10% 7,50 0,75 8,25
+Total $ 7,50 $ 0,75 $ 8,25

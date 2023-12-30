@@ -1,0 +1,24 @@
+Invoice no: 74184749
+Date of issue: 03/07/2015
+Seller:
+Klein and Sons
+Unit 6028 Box 0366
+DPO AP 38632
+Tax Id: 963-86-0433
+IBAN: GB69IFZX47543651270054
+Client:
+Liu-Perry
+6914 Carolyn Circle
+Eugenefort, VA 31831
+Tax Id: 990-98-8702
+ITEMS
+No. Description Qty UM Net price Net worth VAT [%] Gross
+worth
+Stemless wine glass Etched
+coordinates of Myakka River
+State Park, Very Good
+1. 1,00 each 2,99 2,99 10% 3,29
+SUMMARY
+VAT [%] Net worth VAT Gross worth
+10% 2,99 0,30 3,29
+Total $ 2,99 $ 0,30 $ 3,29

@@ -1,0 +1,32 @@
+Invoice no: 24342647
+Date of issue: 05/07/2020
+Seller:
+Davis, Evans and Cooper
+475 Daniel Port
+Moralesborough, OK 44662
+Tax Id: 933-70-8828
+IBAN: GB05CPFN10349037207241
+Client:
+Stephens-Goodman
+5197 Rebekah Stravenue Suite 498
+New Nicholasland, VA 18645
+Tax Id: 910-72-5904
+ITEMS
+No. Description Qty UM Net price Net worth VAT [%] Gross
+worth
+15"x15" White Marble Coffee
+Table Top With 15" Tall Stand
+Semi Precious Art Deco
+1. 4,00 each 575,99 2 303,96 10% 2 534,36
+12" Marble Lapis Inlay Chess
+Table Top With 2" Pieces & 15"
+Wooden Stand W537
+2. 3,00 each 444,60 1 333,80 10% 1 467,18
+18"x18" White Hand Curved Top
+Coffee Table Inlay Decorative
+Gift For Her Wedding
+3. 1,00 each 475,22 475,22 10% 522,74
+SUMMARY
+VAT [%] Net worth VAT Gross worth
+10% 4 112,98 411,30 4 524,28
+Total $ 4 112,98 $ 411,30 $ 4 524,28

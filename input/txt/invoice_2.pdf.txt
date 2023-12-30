@@ -1,0 +1,49 @@
+Invoice no: 16662010
+Date of issue: 08/28/2016
+Seller:
+Smith-Cook
+174 Justin Causeway
+West Michaelmouth, ME 69894
+Tax Id: 959-84-2124
+IBAN: GB20BAKH22085364527355
+Client:
+Snyder-Johnson
+05173 Heather Mill
+Jenniferfort, WV 79662
+Tax Id: 938-85-4960
+ITEMS
+No. Description Qty UM Net price Net worth VAT [%] Gross
+worth
+Nintendo Gameboy Pocket
+Console Green with Box
+MGB-001 Japan Tested Working
+59
+1. 1,00 each 65,00 65,00 10% 71,50
+New Sony Playstation 4 Slim
+1TB 3 Game Bundle Console.
+Sealed!!!
+2. 3,00 each 399,99 1 199,97 10% 1 319,97
+Atari Flashback 4 Classic Game
+Console 75 built in games
+Space Invaders Asteroid
+3. 4,00 each 8,50 34,00 10% 37,40
+Sony PlayStation 1 PS1 Console
+model scph-7501
+4. 4,00 each 14,99 59,96 10% 65,96
+Nintendo Wii Console - 2
+Remotes w/ Covers, Nunchucks,
+Sensor Sega Game Bundle
+5. 1,00 each 85,00 85,00 10% 93,50
+Sony PlayStation 3 PS3 Super
+Slim Black Console 20 GB
+*Tested* Console & Cables
+6. 4,00 each 99,95 399,80 10% 439,78
+Nintendo Gameboy Pocket
+Console Green with Box
+MGB-001 Japan Tested Working
+55
+7. 3,00 each 70,00 210,00 10% 231,00
+SUMMARY
+VAT [%] Net worth VAT Gross worth
+10% 2 053,73 205,37 2 259,10
+Total $ 2 053,73 $ 205,37 $ 2 259,10

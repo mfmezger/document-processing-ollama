@@ -1,0 +1,37 @@
+Invoice no: 12459784
+Date of issue: 08/19/2020
+Seller:
+Smith, Johnson and Ramsey
+3581 Ruben Gateway Suite 160
+New Kayla, NH 28229
+Tax Id: 902-96-4332
+IBAN: GB87QEXA37903967899333
+Client:
+Russell-Cruz
+USNV Olson
+FPO AP 50747
+Tax Id: 969-85-1568
+ITEMS
+No. Description Qty UM Net price Net worth VAT [%] Gross
+worth
+The Great One: The Complete
+Wayne Gretzky Collection
+1. 4,00 each 4,89 19,56 10% 21,52
+return to virgin river by robyn
+carr
+2. 4,00 each 2,99 11,96 10% 13,16
+Michael Jackson: A Life in Music
+(Paperback or Softback)
+3. 2,00 each 12,33 24,66 10% 27,13
+4. Luke s Fate Star Wars 3,00 each 4,49 13,47 10% 14,82
+Little Women by Louisa May
+Alcott Illustrated Brand New
+Collectible Hardcover
+5. 5,00 each 14,77 73,85 10% 81,23
+The Blooding by Joseph
+Wambaugh
+6. 1,00 each 4,49 4,49 10% 4,94
+SUMMARY
+VAT [%] Net worth VAT Gross worth
+10% 147,99 14,80 162,79
+Total $ 147,99 $ 14,80 $ 162,79

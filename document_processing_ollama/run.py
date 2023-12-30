@@ -20,6 +20,17 @@ def main():
     output_dir = "output"
     output_file = os.path.join(output_dir, "result.json")
 
+    pdf_to_json(input_dir, output_dir, output_file)
+
+
+def pdf_to_json(input_dir: str, output_dir: str, output_file: str):
+    """Converts PDF files to JSON files.
+
+    Args:
+        input_dir (str): Input directory with PDF files.
+        output_dir (str): Output directory for JSON files.
+        output_file (str): Output file name.
+    """
     pdf_extractor = PDFDocumentExtractor(path=input_dir)
 
     ollama_service = OllamaService(model="mistral:instruct", prompt_name="json-extraction.j2")

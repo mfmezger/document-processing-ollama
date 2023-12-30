@@ -1,0 +1,32 @@
+Invoice no: 19471831
+Date of issue: 04/09/2014
+Seller:
+Palmer Ltd
+9790 Bauer Hills Apt. 146
+South Patriciaton, SD 32497
+Tax Id: 924-71-1106
+IBAN: GB05YUTG50853913677557
+Client:
+Rios, Oneill and Rowe
+3571 Tina Trafficway
+Buckleyland, LA 97688
+Tax Id: 922-72-5979
+ITEMS
+No. Description Qty UM Net price Net worth VAT [%] Gross
+worth
+15"x15" White Decorative
+Coffee Table Top Lapis Lazuli
+Marquetery Patio Décor
+1. 3,00 each 645,77 1 937,31 10% 2 131,04
+4'x2' Marble Dining Table Top
+Pietra Dura Birds Inlay Art
+Furniture Decors B444
+2. 5,00 each 1 840,10 9 200,50 10% 10 120,55
+60 Inches Marble Dinning Table
+Top Hand Inlaid Garden Table
+with Gemstones
+3. 5,00 each 5 908,00 29 540,00 10% 32 494,00
+SUMMARY
+VAT [%] Net worth VAT Gross worth
+10% 40 677,81 4 067,78 44 745,59
+Total $ 40 677,81 $ 4 067,78 $ 44 745,59

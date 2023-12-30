@@ -3,7 +3,7 @@ import os
 from abc import ABC, abstractmethod
 from typing import Dict
 
-from langchain.document_loaders import DirectoryLoader, PyPDFium2Loader, TextLoader
+from langchain.document_loaders import DirectoryLoader, PyPDFium2Loader
 
 
 class AbstractDocumentExtractor(ABC):
@@ -43,17 +43,6 @@ class PDFDocumentExtractor(AbstractDocumentExtractor):
         result = dict(sorted(result.items()))
 
         return result
-
-
-class WordDocumentExtractor(AbstractDocumentExtractor):
-    """Extracts documents from Word files."""
-
-    def extract_documents(self):
-        """Extracts documents from Word files."""
-        # Implement text extraction from Word document here
-        loader = DirectoryLoader(self.path, glob="*.txt", loader_cls=TextLoader(encoding=self.format))
-        docs = loader.load()
-        return docs
 
 
 class TextDocumentExtractor(AbstractDocumentExtractor):
