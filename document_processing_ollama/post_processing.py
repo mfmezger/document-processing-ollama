@@ -27,8 +27,6 @@ class JSONPostProcessor(AbstractPostProcessor):
 
     def cleaning(self):
         """Clean the data."""
-        # Implement cleaning of the data here
-
         # iterate over the data
         for doc in self.data:
             # get the answer from the data
@@ -45,7 +43,7 @@ class JSONPostProcessor(AbstractPostProcessor):
 
         return self.data
 
-    def validation(self, text, doc):
+    def validation(self, text: str, doc: str):
         """Validate the correct data format."""
         try:
             answer_dict = json.loads(text)
