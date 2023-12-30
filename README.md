@@ -3,7 +3,7 @@
 
 ## Introduction
 
-
+This is a repository used to demonstrate how to use LLMs for document processing.
 
 ## Installation
 
