@@ -1,10 +1,12 @@
 """The OllamaService class provides a wrapper for the Ollama class."""
-import json
 import os
 
 from langchain.llms import Ollama
 from langchain.prompts import PromptTemplate
+from loguru import logger
 from tqdm import tqdm
+
+model = "mistral:instruct"
 
 
 class OllamaService:
@@ -12,8 +14,10 @@ class OllamaService:
 
     def __init__(self):
         """Initialization of the Connection to the Ollama API."""
-        self.llm = Ollama(model="mistral:instruct")
+        self.llm = Ollama(model=model)
         self.prompt = self.load_prompt("json-extraction.j2")
+
+        logger.info(f"OllamaService initialized with model: {model}.")
 
     def load_prompt(self, prompt_name):
         """Loads a prompt from a file."""
@@ -36,18 +40,10 @@ class OllamaService:
 
             # generate the prediction
             answer = self.llm(text_prompt)
-
-            # remove all line breaks and double backslashes
-            answer = answer.replace("\n", "").replace("\\", "").strip()
-
-            # create a json object from the answer
-            try:
-                answer_dict = json.loads(answer)
-            except json.JSONDecodeError:
-                answer_dict = answer
+            logger.info(f"Answer for {doc}: {answer}")
 
             # append the answer to the result
-            result[doc] = {"title": doc, "input": documents[doc], "output": answer_dict}
+            result[doc] = {"title": doc, "input": documents[doc], "output": answer}
 
         return result
 

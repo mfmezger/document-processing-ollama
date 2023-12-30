@@ -11,6 +11,7 @@ langchain = "^0.0.352"
 pypdfium2 = "^4.25.0"
 jinja2 = "^3.1.2"
 tqdm = "^4.66.1"
+loguru = "^0.7.2"
 
 
 [build-system]

@@ -1,5 +1,8 @@
 """These classes are used to post-process the data after it has been extracted from the documents."""
+import json
 from abc import ABC, abstractmethod
+
+from loguru import logger
 
 
 class AbstractPostProcessor(ABC):
@@ -26,9 +29,31 @@ class JSONPostProcessor(AbstractPostProcessor):
         """Clean the data."""
         # Implement cleaning of the data here
 
-    def validation(self):
+        # iterate over the data
+        for doc in self.data:
+            # get the answer from the data
+            answer = self.data[doc]["output"]
+
+            # remove all line breaks and double backslashes
+            answer = answer.replace("\n", "").replace("\\", "").strip()
+
+            # create a json object from the answer
+            answer_dict = self.validation(text=answer, doc=doc)
+
+            # add the answer to the data
+            self.data[doc]["output"] = answer_dict
+
+        return self.data
+
+    def validation(self, text, doc):
         """Validate the correct data format."""
-        # Implement validation of the data here
+        try:
+            answer_dict = json.loads(text)
+        except json.JSONDecodeError as e:
+            logger.error(f"Could not decode JSON data: {doc}")
+            raise e
+
+        return answer_dict
 
 
 class MarkdownPostProcessor(AbstractPostProcessor):
